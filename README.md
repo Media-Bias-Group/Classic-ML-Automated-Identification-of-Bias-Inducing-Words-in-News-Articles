@@ -6,7 +6,7 @@ The repository contains the data files and the scripts created during the develo
 - sentences_final.xlsx: not labeled sentences dataset
 - biased_words_analysis.xlsx: manual corrections of annotations
 - articles.xlsx: sentences and articles
-- *labeled_dataset.xlsx: The final labeled dataset, the result of an annotation survey conducted during the thesis project is in the file*
+- **labeled_dataset.xlsx: The final labeled dataset, the result of an annotation survey conducted during the thesis project is in the file**
 - annotators.csv: background info about annotators
 - results_bias.xlsx: pivoted table summarizing all sentence annotations of bias/non-bias
 - huff_simp_bi_trigr10.model: word embeddings trained on HuffPost articles
