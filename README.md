@@ -5,7 +5,7 @@ The repository contains the data files and the scripts created during the develo
 - annotations_final_notempty.xlsx: row survey data
 - sentences_final.xlsx: not labeled sentences dataset
 - biased_words_analysis.xlsx: manual corrections of annotations
-- articles.xlsx: sentences and articles
+- articles.xlsx: sentences and articles they were collected from (for some sentences articles are missing)
 - **labeled_dataset.xlsx: The final labeled dataset, the result of an annotation survey conducted during the thesis project is in the file**
 - annotators.csv: background info about annotators
 - results_bias.xlsx: pivoted table summarizing all sentence annotations of bias/non-bias
