@@ -1,14 +1,27 @@
 # Automated-Identification-of-Bias-Inducing-Words-in-News-Articles
 
-## Description of the attached data files (only data files created during the thesis project are attached, external files aren't attached)
+## I Description of the attached data files (only data files created during the thesis project are attached, external files aren't attached)
+- annotations_final_notempty.xlsx: row survey data
+- sentences_final.xlsx: not labeled sentences dataset
+- biased_words_analysis.xlsx: manual corrections of annotations
+- articles.xlsx: sentences and articles
+- labeled_dataset.xlsx: final dataset on the sentence level, without features
+- annotators.csv: background info about annotators
+- results_bias.xlsx: pivoted table summarizing all sentence annotations of bias/non-bias
+- huff_simp_bi_trigr10.model: word embeddings trained on HuffPost articles
+- breitbart10.model: word embeddings trained on Breitbart articles
+- seed_biased_words.xlsx: a list of manually selected seed biased words
+- dt_final.xlsx: dataset with words as observations and feature vector for each word
+- various XGBoost models. Attached but are very fast to train again.
 
-## Description of the attached scripts (data files attached: +, not attached: -)
+
+## II Description of the attached scripts
 ### 1.1_Survey_results_processing.ipynb
 In this script, we:
 - assemble the row survey data into a dataset for further media bias analysis,
 - retrieve descriptive statistics of the assembled dataset.
 
-To run this script, the following data files are needed:
+To run this script, the following data files are needed (attached):
 - annotations_final_notempty.xlsx
 - sentences_final.xlsx
 - biased_words_analysis.xlsx
@@ -32,25 +45,25 @@ In this script, we:
 - extract seed biased words from the words close to the words describing contentious topics
 
 To run this script, the following data files are needed:
-- left_news_dates.csv (-)
-- right_news_dates.csv (-)
-- wordsim353.tsv (-)
-- men.txt (-)
-- questions-words.txt (-)
+- left_news_dates.csv
+- right_news_dates.csv
+- wordsim353.tsv
+- men.txt
+- questions-words.txt
 
 Saved models:
-- huff_simp_bi_trigr10.model (+)
-- breitbart10.model (+)
+- huff_simp_bi_trigr10.model (attached)
+- breitbart10.model (attached)
 
 ### 2.2_Bias_lexicon_creation.ipynb
 In this script, we create the bias words lexicon semi-automatically
 
 To run this script, the following data files are needed:
-- GoogleNews-vectors-negative300.bin (-)
-- wordsim353.tsv (-)
-- men.txt (-)
-- questions-words.txt (-)
-- seed_biased_words.xlsx (+)
+- GoogleNews-vectors-negative300.bin
+- wordsim353.tsv
+- men.txt
+- questions-words.txt
+- seed_biased_words.xlsx (attached)
 
 ### 3.1_Features_engineering.ipynb
 In this script, we:
@@ -59,9 +72,9 @@ In this script, we:
 - prepare data for further ML training (e.g., one-hot encoding, etc.)
 
 To run this script, the following data files are needed:
-- labeled_dataset.xlsx
+- labeled_dataset.xlsx (attached)
 
-Dictionaries needed to run the code (only biased lexicon is attached): 
+Dictionaries needed to run the code: 
 - details in the script
 
 ### 3.2_Features_analysis.ipynb
@@ -84,21 +97,21 @@ In this script, we:
 - evaluate features importance
 
 To run this script, the following data files are needed:
-- dt_final.xlsx (+)
+- dt_final.xlsx (attached)
 
 Saved models:
-- xgboost_tuned_weighted.model (+)
+- xgboost_tuned_weighted.model (attached)
 
 ### 4.3_ML_features_selection.ipynb
 In this script, we remove different groups of features from training to see when the performance decreases
 
 To run this script, the following data files are needed:
-- dt_final.xlsx (+)
+- dt_final.xlsx (attached)
 
-Saved models:
-- xgboost_no_enrichm.model (+)
-- xgboost_no_tfidf.model (+)
-- xgboost_no_lex.model (+)
-- xgboost_no_liwc.model (+)
-- xgboost_no_bias_lex.model (+)
-- xgboost_no_context.model (+)
+Saved models (attached):
+- xgboost_no_enrichm.model
+- xgboost_no_tfidf.model
+- xgboost_no_lex.model
+- xgboost_no_liwc.model
+- xgboost_no_bias_lex.model
+- xgboost_no_context.model
