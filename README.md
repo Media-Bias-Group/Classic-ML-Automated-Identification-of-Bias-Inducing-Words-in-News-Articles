@@ -1,4 +1,5 @@
 # Automated-Identification-of-Bias-Inducing-Words-in-News-Articles
+The repository contains the data files and the scripts created during the development of the master thesis at the University of Konstanz.
 
 ## I Description of the attached data files (only data files created during the thesis project are attached, external files aren't attached)
 - annotations_final_notempty.xlsx: row survey data
