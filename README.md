@@ -2,7 +2,7 @@
 The repository contains the data files and the scripts created during the development of the master thesis at the University of Konstanz.
 
 ## I Description of the attached data files (only data files created during the thesis project are attached, external files aren't attached)
-- annotations_final_notempty.xlsx: row survey data
+- annotations_final_notempty.xlsx: raw survey data
 - sentences_final.xlsx: not labeled sentences dataset
 - biased_words_analysis.xlsx: manual corrections of annotations
 - articles.xlsx: sentences and articles they were collected from (for some sentences articles are missing)
@@ -19,7 +19,7 @@ The repository contains the data files and the scripts created during the develo
 ## II Description of the attached scripts
 ### 1.1_Survey_results_processing.ipynb
 In this script, we:
-- assemble the row survey data into a dataset for further media bias analysis,
+- assemble the raw survey data into a dataset for further media bias analysis,
 - retrieve descriptive statistics of the assembled dataset.
 
 To run this script, the following data files are needed (attached):
